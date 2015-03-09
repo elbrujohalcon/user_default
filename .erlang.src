@@ -1,4 +1,4 @@
-UD = "/Users/elbrujohalcon/Projects/erlang/elbrujohalcon/user_default/user_default".
+UD = "/Users/elbrujohalcon/Projects/elbrujohalcon/user_default/user_default".
 compile:file(UD ++ ".erl", [debug_info, report_errors, report_warnings, {outdir, filename:dirname(UD) ++ "/ebin"}]).
 Result = code:load_abs(filename:dirname(UD) ++ "/ebin/user_default").
 case Result of
